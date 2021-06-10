@@ -1,0 +1,192 @@
+<!-- 
+    Name : Thoriqulhaq Jibril Al Qudsy
+    Metric : A19EC0292
+    Assignment 3: HTML + CSS + JS + Bootstrap
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thoriqulhaq's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="thoriqulhaq_website_style.css">
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/top.png"></button>
+    <section class="section-1">
+        <div class="page-container">
+            <div class="navigation-bar">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/logo.png">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">ABOUT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">GALLERY</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#skill">HOBBIES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">CONTACT</a>
+                                </li>   
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="intro-wrapper">
+                <div class="hero">
+                    <h1>Hi, I'm a Software Engineering student who passionate in Web Development and Design.</h1>
+                </div>
+                <div class="profile">
+                    <img src="img/profile.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-2" id="about">
+        <div class="page-container">
+            <div class="content-wrapper-1">
+                <div class="headline">
+                    <h1>- About Me -</h1>
+                </div>
+                <div class="content">
+                    <p>
+                        My name is Thoriqulhaq Jibril Al Qudsy. You may call me Thoriq. I am a second-year student in the Faculty of Engineering, School of Computing in Universiti Teknologi Malaysia who currently take Software Engineering course. 
+                        <br>
+                        <br>
+                        I'm so passionate about designing and developing website and mobile app. So, I love build new projects just to tickle my brain and published on my github. For now, I focused on build a static website such as portfolio and blog.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-2" id="gallery">
+        <div class="page-container">
+            <div class="content-wrapper-2">
+                <div class="headline">
+                    <h1>- Gallery -</h1>
+                </div>
+                <div class="content">
+                    <iframe id=yt-video src="https://www.youtube.com/embed/3IqRNQiBAZg" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-2" id="skill">
+        <div class="page-container">
+            <div class="content-wrapper-3">
+                <div class="headline">
+                    <br>
+                    <br>
+                    <h1>- Project -</h1>
+                </div>
+                <div class="content">
+                    <div class="project_picture">
+                        <div>
+                            <a id="card-project" href="https://thoriqulhaq.github.io/Portfolio-Website/">
+                                <img id="card-picture"
+                                    src="img/project-1.jpg"
+                                >
+                                <div id="tags">
+                                    <p>Portfolio Website with <br> Dark Mode Feature</p>
+                                </div>
+                            </a>
+                        </div>
+                        <>
+                            <a id="card-project" href="https://thoriqulhaq.github.io/Portfolio-Website-with-Bootstrap/">
+                                <img id="card-picture"
+                                    src="img/project-2.jpg"
+                                >
+                                <div id="tags">
+                                    <p>Portfolio Website with <br> Bootstrap Framework</p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-2" id="contact">
+        <div class="page-container">
+            <div class="content-wrapper-4">
+                <div class="headline">
+                    <h1>- Contact -</h1>
+                </div>
+
+                <div class="content">
+                    <div class="message">
+                        <form id="messageform" action="/action_page.php">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="emailaddress" placeholder="example@gmail.com">
+                            
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="fullname" placeholder="John Doe">
+                            
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Leave message here!" style="height:125px"></textarea>
+                            
+                            <input type="button" onclick="myFunction()" value="Send">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <div>
+                        <a id="social-media-list" href="https://www.facebook.com/ThoriqulhaqJ">
+                            Facebook
+                        </a>
+                        <br>
+                        <a id="social-media-list" href="hhttps://www.instagram.com/thoriqulhaq">
+                            Instagram
+                        </a>
+                        <br>
+                        <a id="social-media-list" href="https://twitter.com/ThoriqulhaqJ">
+                            Twitter
+                        </a>
+                        <br>
+                        <a id="social-media-list" href="https://linkedin.com/in/thoriqulhaq">
+                            Linkedin
+                        </a>
+                        <br>
+                        <a id="social-media-list" href="https://github.com/thoriqulhaq">
+                            Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="footer">
+        <div class="page-container">
+            <p id="copyright">Copyright © 2021 Thoriqulhaq. All rights reserved</p>
+        </div>
+    </section>
+
+    <script src="thoriqulhaq_website_script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

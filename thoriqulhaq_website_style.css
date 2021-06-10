@@ -1,0 +1,391 @@
+/*
+    Name : Thoriqulhaq Jibril Al Qudsy
+    Metric : A19EC0292
+    Assignment 3: HTML + CSS + JS + Bootstrap
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    transition: 0.3s;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Righteous', cursive;
+    color: #fff;
+}
+
+h1 {
+    font-size: 47px;
+}
+
+.navigation-bar {
+    padding-top: 15px;
+}
+
+.section-1 {
+    background-image: url("img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+    height: 100%;
+    border-bottom:  1px solid rgb(88,83,79);
+}
+
+.section-2 {
+    background-image: url("img/bg-new.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+    height: 100%;
+}
+
+.footer {
+    text-align: center;
+    padding-bottom: 3.5em;
+    padding-top: 3.5em;
+    background-color: rgb(88,83,79);
+    border-top:  1px solid rgb(16,16,16);
+}
+
+.page-container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.navbar-brand img{
+    height: 50px;
+}
+
+.nav-item {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.intro-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 56.45em;
+    grid-template-areas: 
+        'hero profile'
+    ;
+}
+
+.content-wrapper-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 23.5em;
+    grid-template-areas: 
+        'headline content'
+    ;
+    border: 1px solid rgb(88,83,79);
+    padding-right: 100px;
+    margin-top: 5em;
+    margin-bottom: 2.5em;
+}
+
+.content-wrapper-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 26em;
+    grid-template-areas: 
+        'content headline'
+    ;
+    border: 1px solid rgb(88,83,79);
+    padding-right: 100px;
+    margin-bottom: 5em;
+}
+
+.content-wrapper-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8em 39em;
+    grid-template-areas: 
+        'headline'    
+        'content'
+    ;
+    border: 1px solid rgb(88,83,79);
+    margin-top: 7.5em;
+    margin-bottom: 12.5em;
+}
+
+.content-wrapper-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 7em 35em;
+    grid-template-areas: 
+        'headline social-media'
+        'content social-media'
+    ;
+    border: 1px solid rgb(88,83,79);
+    margin-top: 7.5em;
+    margin-bottom: 12em;
+}
+
+.headline {
+    grid-area: headline;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content {
+    grid-area: content;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 100%;
+}
+
+.content p {
+    font-size: 21px
+}
+
+.social-media {
+    grid-area: social-media;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#social-media-list {
+    font-size: 21px;
+}
+
+.hero {
+    grid-area: hero;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    padding-bottom: 125px;
+    padding-left: 200px;
+}
+
+.profile {
+    grid-area: profile;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile img{
+    margin-bottom: 110px;
+    width: 300px;
+    border-radius: 2.5px;
+    border: 2px solid rgb(88,83,79);
+    object-fit: cover;
+}
+
+.project_picture {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    width: 100%;
+    padding-top: 100px;
+    margin-bottom: 250px;
+}
+
+#card-project {
+    text-decoration: none;
+}
+
+#card-picture {
+    margin-top:50px;
+    background-color: rgb(16,16,16);
+    margin: auto;
+    border: 2px solid rgb(88,83,79);
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 350px;
+    height: 240px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#tags {
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    font-size: 19px;
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    text-align: center;
+}
+
+.message {
+    margin: auto;
+    border-radius: 1%;
+    width: 80%;
+    background-color: rgb(88,83,79);
+    padding: 15px;
+}
+
+.message label {
+    color: white;
+    font-weight: bold;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(54, 54, 54);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    
+    resize: vertical;
+}
+input[type=button] {
+    background-color: rgb(54, 54, 54);
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: white;
+    color: rgb(88,83,79);
+    border: 0.5px solid rgb(88,83,79);
+}
+
+#myBtn {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(88,83,79);
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    border-radius: 4px;
+    opacity: 0.75;
+}
+
+#myBtn img {
+    height: 15px;
+}
+
+@media screen and (max-width: 1400px) {
+    .page-container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+    .intro-wrapper{
+        grid-template-columns: 1fr;
+        grid-template-rows: 34em 14em ;
+        grid-template-areas:
+        'profile'
+        'hero' 
+        ;
+    }
+
+    .hero {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .content-wrapper-1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 7em 31em;
+        grid-template-areas: 
+        'headline'
+        'content' 
+        ;
+        border: 1px solid rgb(88,83,79);
+        padding-right: 50px;
+        padding-left: 50px;
+        margin-top: 5em;
+        margin-bottom: 2.5em;
+    }
+    
+    .content-wrapper-2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 7em 28em;
+        grid-template-areas: 
+        'headline'
+        'content' 
+        ;
+        border: 1px solid rgb(88,83,79);
+        padding-right: 50px;
+        padding-left: 50px;
+        margin-bottom: 2.5em;
+        margin-top: 0;
+    }
+    
+    .content-wrapper-3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 7em 135em;
+        grid-template-areas: 
+            'headline'    
+            'content'
+        ;
+        margin-bottom: 2.5em;
+        margin-top: 0;
+    }
+    
+    .content-wrapper-4 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 7em 35em 16em;
+        grid-template-areas: 
+            'headline'
+            'content'
+            'social-media'
+        ;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-bottom: 2.5em;
+    }
+
+    .hobbies_picture {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 100px;
+        margin: auto;
+        width: 100%;
+        padding-top: 100px;
+        margin-bottom: 250px;
+    }
+
+    .profile img{
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #yt-video {
+        width:100%;
+        padding: 5px;
+        border: 1px solid var(--mainColor);
+    }
+}
